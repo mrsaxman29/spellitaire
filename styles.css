@@ -1,0 +1,114 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;   
+}
+/*  
+notes = deck
+score = spelled
+points = score
+*/
+.header{
+    background-color: rgb(101, 101, 169);
+    color: black;
+    height: 100px;
+    font-size: 25px;
+}
+.head2{
+    background-color: darkgoldenrod;
+}
+.newgame{
+    background-color: red;
+    margin-left: 50%;
+}
+
+.points{
+    margin-left: 100px;
+}
+
+.highscore{
+    margin-left: 100px;
+
+}
+
+.notes{
+    margin-left: 200px;
+}
+
+.draw-cards{
+    background-color: darkgoldenrod;
+    color: white;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);   
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    background-color: black;
+    display: inline-flex;
+    color: black;
+    width: 103px;
+    height: 142px;
+    margin: 20px;
+    background-image: url("cardbackground.jpeg");
+    background-size: 100px;
+}
+
+.letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, 
+.sletter1, .sletter2, .sletter3,.sletter4, .sletter5,.sletter6, .sletter7, .sletter8 {
+    color: blueviolet;
+    font-size: 72px;
+    position: relative;
+    bottom: -20px;
+    right: -25px;
+}
+
+.point1, .point2, .point3, .point4, .point5, .point6, .point7, .point8,
+.spoint1, .spoint2, .spoint3, .spoint4, .spoint5, .spoint6, .spoint7, .spoint8
+{
+    color: green;
+    font-size: 20px;
+    position: relative;
+    right: 45px;
+}
+
+
+.slot1, .slot2, .slot3, .slot4, .slot5, .slot6, .slot7, .slot8{
+    background-color: darkgoldenrod;
+    display: inline-flex;
+    width: 103px;
+    height: 142px;
+    margin: 20px;
+    padding: 0;
+    border: none;
+    
+}
+
+.footer{
+    background-color: deepskyblue;
+    height: 150px;
+    display: flex;
+    padding: 50px;
+}
+
+.submit{
+    background-color: white;
+    height: 100px;
+    width: 250px;
+    margin-left: 100px;
+}
+
+.reset{
+    margin-left: 200px;
+    background-color: brown;
+    height: 100px;
+    width: 250px;
+}
+
+.rules{
+    height:100px;
+    background-color: orchid;
+    font-size: 20px;
+
+}
+
