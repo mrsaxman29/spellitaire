@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!-- Quiddler Solitaire is 8 stacks of 5 cards
+
+    GOAL IDEAS:  
+
+    Deck is comprised of all letters in alphabet only 1x - but what about vowels?  3x
+    
+    Using all cards triggers the end of the game; 
+    
+    Highest point value leaderboard;
+
+    Spelling longer words adds a multiplier:
+        3 letters 1.0x
+        4 letters 1.2x
+        5 letters 1.4x
+        6 letters 1.6x
+        7 letters 1.8x
+        8 letters 2.0x
+
+    
+        MAKE IT SO THAT WHEN YOU TYPE IT MOVES THE CARDS -   ACCEPT KEYBOARD INPUT ON PAGE LOAD
+-->
+
+
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script text="type/javascript" src="script.js"></script>
+    </head>
+
+    <body onload="setup()">
+
+        <div id="header" class="header">
+            <span id="score" class="score">YOU SPELLED: </span>
+            <span id="notes" class="notes">CARDS LEFT: </span>
+            <span id="points" class="points">SCORE:</span>
+            <span id="highscore" class="highscore">HIGH SCORE:</span>
+        </div>
+        <div id="head2" class="head2">
+            <button id="newgame" class="newgame" onclick="newgame()">NEW GAME</button>
+        </div>
+
+        <!--DEALT CARD SLOTS-->
+        
+        <div class="draw-cards">
+            <button id="card1" onclick="select(1)" class="card1">
+                <span id="letter1" class="letter1">A</span>
+                <span id="point1" class="point1">5</span>            
+            </button>
+            <button id="card2" onclick="select(2)" class="card2">
+                <span id="letter2" class="letter2">A</span>
+                <span id="point2" class="point2">5</span>   
+            </button>
+            <button id="card3" onclick="select(3)" class="card3">
+                <span id="letter3" class="letter3">A</span>
+                <span id="point3" class="point3">5</span>   
+            </button>
+            <button img id="card4" onclick="select(4)" class="card4">
+                <span id="letter4" class="letter4">A</span>
+                <span id="point4" class="point4">9</span>   
+            </button>
+            <button id="card5" onclick="select(5)" class="card5">
+                <span id="letter5" class="letter5">A</span>
+                <span id="point5" class="point5">5</span>   
+            </button>
+            <button id="card6" onclick="select(6)" class="card6">
+                <span id="letter6" class="letter6">A</span>
+                <span id="point6" class="point6">5</span>   
+            </button>
+            <button id="card7" onclick="select(7)" class="card7">
+                <span id="letter7" class="letter7">A</span>
+                <span id="point7" class="point7">5</span>   
+            </button>
+            <button id="card8" onclick="select(8)" class="card8">
+                <span id="letter8" class="letter8">A</span>
+                <span id="point8" class="point8">5</span>   
+            </button>
+
+            <!--SLOTS TO PLAY CARDS INTO-->
+
+            <button id="slot1" onclick="moveup(1)" class="slot1">
+                <span id="sletter1" class="sletter1"></span>
+                <span id="spoint1" class="spoint1"></span>
+            </button>
+            <button id="slot2" onclick="moveup(2)" class="slot2">
+                <span id="sletter2" class="sletter2"></span>
+                <span id="spoint2" class="spoint2"></span>
+            </button>
+            <button id="slot3" onclick="moveup(3)" class="slot3">
+                <span id="sletter3" class="sletter3"></span>
+                <span id="spoint3" class="spoint3"></span>
+            </button>
+            <button id="slot4" onclick="moveup(4)" class="slot4">
+                <span id="sletter4" class="sletter4"></span>
+                <span id="spoint4" class="spoint4"></span>
+            </button>
+            <button id="slot5" onclick="moveup(5)" class="slot5">
+                <span id="sletter5" class="sletter5"></span>
+                <span id="spoint5" class="spoint5"></span>
+            </button>
+            <button id="slot6" onclick="moveup(6)" class="slot6">
+                <span id="sletter6" class="sletter6"></span>
+                <span id="spoint6" class="spoint6"></span>
+            </button>
+            <button id="slot7" onclick="moveup(7)" class="slot7">
+                <span id="sletter7" class="sletter7"></span>
+                <span id="spoint7" class="spoint7"></span>
+            </button>
+            <button id="slot8" onclick="moveup(8)" class="slot8">
+                <span id="sletter8" class="sletter8"></span>
+                <span id="spoint8" class="spoint8"></span>
+            </button>
+        </div>
+
+        
+        <div class="footer" id="footer">
+            <button id="reset" onclick="reset()" class="reset">RESET</button>
+            <button id="submit" onclick="submit()" class="submit">SUBMIT</button>
+            
+
+        </div>
+
+        <div id="rules" class="rules">RULES: 3 & 4 Letter Words Score 1x point Value 5 & 6 Letter Words 
+            Score 2x  7 Letter Words 3x   8 Letter 4x
+        </div>
+
+    </body>
+
+</html>
