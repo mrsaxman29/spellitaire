@@ -86,7 +86,7 @@ points = score
 
 .footer{
     background-color: deepskyblue;
-    height: 150px;
+    height: 400px;
     display: flex;
     padding: 50px;
 }
