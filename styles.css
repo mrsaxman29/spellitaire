@@ -86,7 +86,7 @@ points = score
 
 .footer{
     background-color: deepskyblue;
-    height: 400px;
+    height: 200px;
     display: flex;
     padding: 50px;
 }
@@ -106,7 +106,7 @@ points = score
 }
 
 .rules{
-    height:250px;
+    height:500px;
     background-color: orchid;
     font-size: 20px;
 
