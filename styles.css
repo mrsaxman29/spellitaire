@@ -11,7 +11,7 @@ points = score
 .header{
     background-color: rgb(101, 101, 169);
     color: black;
-    height: 100px;
+    height: 40px;
     font-size: 25px;
 }
 .head2{
@@ -28,7 +28,6 @@ points = score
 
 .highscore{
     margin-left: 100px;
-
 }
 
 .notes{
@@ -38,18 +37,17 @@ points = score
 .draw-cards{
     background-color: darkgoldenrod;
     color: white;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);   
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;   
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
-    background-color: black;
     display: inline-flex;
-    color: black;
     width: 103px;
     height: 142px;
     margin: 20px;
+    margin-top: 5px;
     background-image: url("cardbackground.jpeg");
     background-size: 100px;
 }
@@ -79,16 +77,25 @@ points = score
     width: 103px;
     height: 142px;
     margin: 20px;
+    margin-top: 5px;
     padding: 0;
     border: none;
     
 }
 
+#slots{
+    background-color: darkgoldenrod;
+}
+
+#break{
+    background-color: green;
+}
+
 .footer{
     background-color: deepskyblue;
-    height: 200px;
+    height: 100px;
     display: flex;
-    padding: 50px;
+    padding: 10px;
 }
 
 .submit{
@@ -106,7 +113,7 @@ points = score
 }
 
 .rules{
-    height:500px;
+    height:100px;
     background-color: orchid;
     font-size: 20px;
 
