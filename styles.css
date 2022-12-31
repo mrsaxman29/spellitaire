@@ -8,6 +8,8 @@ notes = deck
 score = spelled
 points = score
 */
+
+
 .header{
     background-color: rgb(101, 101, 169);
     color: black;
@@ -118,4 +120,111 @@ points = score
     font-size: 20px;
 
 }
+
+.divider{
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    @viewport {
+      orientation: landscape;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+        display: inline-flex;
+        width: 60px;
+        height: 92px;
+        margin-left: 10px;
+        margin-top: 5px;
+        background-image: url("cardbackground.jpeg");
+        
+    }
+    .letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, 
+    .sletter1, .sletter2, .sletter3,.sletter4, .sletter5,.sletter6, .sletter7, .sletter8 {
+    color: blueviolet;
+    font-size: 42px;
+    position: relative;
+    bottom: -20px;
+    right: -3px;
+    }
+    .point1, .point2, .point3, .point4, .point5, .point6, .point7, .point8,
+    .spoint1, .spoint2, .spoint3, .spoint4, .spoint5, .spoint6, .spoint7, .spoint8
+    {
+    color: green;
+    font-size: 20px;
+    position: relative;
+    right: 35px;
+    }
+    .header{
+        background-color: rgb(101, 101, 169);
+        color: black;
+        height: 40px;
+        font-size: 8px;
+    }
+    .draw-cards{
+        background-color: darkgoldenrod;
+        color: white;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    
+    .slot1, .slot2, .slot3, .slot4, .slot5, .slot6, .slot7, .slot8{
+        background-color: darkgoldenrod;
+        display: inline-flex;
+        width: 60px;
+        height: 92px;
+        margin-left: 10px;
+        margin-top: 1px;
+        border: none;
+        
+    }
+    
+    #slots{
+        background-color: darkgoldenrod;
+        height: 120px;
+
+    }
+    
+    #break{
+        background-color: green;
+    }
+    
+    .footer{
+        background-color: deepskyblue;
+        height: 50px;
+        display: flex;
+        padding: 2px;
+    }
+    
+    .submit{
+        background-color: white;
+        height: 50px;
+        width: 150px;
+        margin-left: 100px;
+    }
+    
+    .reset{
+        margin-left: 200px;
+        background-color: brown;
+        height: 50px;
+        width: 150px;
+    }
+    
+    .rules{
+        height:100px;
+        background-color: orchid;
+        font-size: 10px;
+    
+    }
+    
+
+  }
 
