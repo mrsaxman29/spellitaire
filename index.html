@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script text="type/javascript" src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body onload="setup()">
@@ -40,9 +41,7 @@
             <span id="points" class="points">SCORE:</span>
             <span id="highscore" class="highscore">HIGH SCORE:</span>
         </div>
-        <div id="head2" class="head2">
-            <button id="newgame" class="newgame" onclick="newgame()">NEW GAME</button>
-        </div>
+        
 
         <!--DEALT CARD SLOTS-->
         
@@ -80,10 +79,10 @@
                 <span id="point8" class="point8">5</span>   
             </button>
         </div>
-        <div id="slots">
 
+        
 
-            <!--SLOTS TO PLAY CARDS INTO-->
+        <div id="slots"> <!--SLOTS TO PLAY CARDS INTO-->
 
             <button id="slot1" onclick="moveup(1)" class="slot1">
                 <span id="sletter1" class="sletter1"></span>
@@ -123,6 +122,9 @@
 
         
         <div class="footer" id="footer">
+            <div id="head2" class="head2">
+                <button id="newgame" class="newgame" onclick="newgame()">NEW GAME</button>
+            </div>
             <button id="reset" onclick="reset()" class="reset">RESET</button>
             <button id="submit" onclick="submit()" class="submit">SUBMIT</button>
         </div>
