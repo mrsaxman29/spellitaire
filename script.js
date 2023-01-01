@@ -9,6 +9,7 @@ function reset(){
 
     for(i = 1; i <=8; i++){
         document.getElementById('slot' + i).style.background='none';
+        document.getElementById('slot' + i).style.borderWidth="0px"
         document.getElementById('sletter' + i).innerHTML='';
         document.getElementById('spoint' + i).innerHTML='';
     }
@@ -29,13 +30,18 @@ var roundScore = 0;
 function select(index){  
 
     //MOVE CARD TO THE LEFT MOST PLAYED SLOT
-    document.getElementById('slot' + (spelled.length + 1)).style.backgroundImage= "url('cardbackground.jpeg')";
+    document.getElementById('slot' + (spelled.length + 1)).style.backgroundImage= "";
     document.getElementById('slot' + (spelled.length + 1)).style.backgroundSize="100px"
+    document.getElementById('slot' + (spelled.length + 1)).style.backgroundColor="white"
+    document.getElementById('slot' + (spelled.length + 1)).style.borderWidth="4px"
+    document.getElementById('slot' + (spelled.length + 1)).style.borderColor="black"
+    document.getElementById('slot' + (spelled.length + 1)).style.borderStyle="solid"
     document.getElementById('sletter' + (spelled.length + 1)).innerHTML=deck[index-1].letter;
     document.getElementById('spoint' + (spelled.length + 1)).innerHTML=deck[index-1].point;
     
     //REMOVE CARD FROM OLD SPACE
     document.getElementById('card' + index).style.background='none';
+    document.getElementById('card' + index).style.borderWidth='0px';
     document.getElementById('letter' + index).innerHTML='';
     document.getElementById('point' + index).innerHTML='';
     document.getElementById('card' + index).onclick='';  // disable onclick
@@ -91,6 +97,7 @@ function setup(){
         if(i < deck.length){
             document.getElementById('card' + (i+1)).style.backgroundImage="url('cardbackground.jpeg')";
             document.getElementById('card' + (i+1)).style.backgroundSize="100px";
+            document.getElementById('card' + (i+1)).style.borderWidth="4px"
             document.getElementById('letter' + (i+ 1)).innerHTML=deck[i].letter;
             document.getElementById('point' + (i+ 1)).innerHTML=deck[i].point;
             document.getElementById('card' + (i+1)).onclick= function() {select(i+1);}
@@ -140,6 +147,7 @@ function submit(){
         if(spelling == 1){
             for(i = 1; i <=8; i++){ //delete submitted cards from slots
                 document.getElementById('slot' + i).style.background='none';
+                document.getElementById('slot' + i).style.border="none"
                 document.getElementById('sletter' + i).innerHTML='';
                 document.getElementById('spoint' + i).innerHTML='';
             }
