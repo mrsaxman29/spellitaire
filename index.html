@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script text="type/javascript" src="script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     </head>
 
     <body onload="setup()">
@@ -58,7 +58,7 @@
                 <span id="letter3" class="letter3">A</span>
                 <span id="point3" class="point3">5</span>   
             </button>
-            <button img id="card4" onclick="select(4)" class="card4">
+            <button id="card4" onclick="select(4)" class="card4">
                 <span id="letter4" class="letter4">A</span>
                 <span id="point4" class="point4">9</span>   
             </button>
@@ -122,15 +122,15 @@
 
         
         <div class="footer" id="footer">
+            <button id="reset" onclick="reset()" class="reset">RE-SET</button>
             <div id="head2" class="head2">
                 <button id="newgame" class="newgame" onclick="newgame()">NEW GAME</button>
             </div>
-            <button id="reset" onclick="reset()" class="reset">RESET</button>
             <button id="submit" onclick="submit()" class="submit">SUBMIT</button>
         </div>
 
-        <div id="rules" class="rules">RULES: 3 & 4 Letter Words Score 1x point Value 5 & 6 Letter Words 
-            Score 2x  7 Letter Words 3x   8 Letter 4x
+        <div id="rules" class="rules">3 & 4 Letter Words Score 1x point Value<br> 5 & 6 Letter Words 
+            Score 2x  <br>7 Letter Words 3x  <br> 8 Letter 4x
         </div>
 
     </body>
