@@ -1,5 +1,4 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0;
     margin: 0;   
 }
@@ -9,19 +8,30 @@ score = spelled
 points = score
 */
 
+*{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
 
 .header{
-    background-color: rgb(101, 101, 169);
+    background-color: rgb(255, 212, 121);
     color: black;
     height: 40px;
     font-size: 25px;
 }
 .head2{
-    background-color: darkgoldenrod;
+    background-color:rgb(255, 126, 121);
 }
 .newgame{
-    background-color: red;
-    margin-left: 50%;
+    background-color: rgb(255, 133, 255);
+    margin-left: 3%;
+    color: black;
+    height: 50px;
+    width: 150px;
+    border-color: black;
+    border-width: 4px;
+    font-size: 20px;
+    
 }
 
 .points{
@@ -37,7 +47,7 @@ points = score
 }
 
 .draw-cards{
-    background-color: darkgoldenrod;
+    background-color: rgb(255, 126, 121);
     color: white;
     height: 330px;
     display: flex;
@@ -50,8 +60,8 @@ points = score
     height: 142px;
     margin: 20px;
     margin-top: 5px;
-    background-image: url("cardbackground.jpeg");
-    background-size: 100px;
+    
+    
 }
 
 .letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, 
@@ -66,7 +76,7 @@ points = score
 .point1, .point2, .point3, .point4, .point5, .point6, .point7, .point8,
 .spoint1, .spoint2, .spoint3, .spoint4, .spoint5, .spoint6, .spoint7, .spoint8
 {
-    color: green;
+    color: blueviolet;
     font-size: 20px;
     position: relative;
     right: 45px;
@@ -74,7 +84,7 @@ points = score
 
 
 .slot1, .slot2, .slot3, .slot4, .slot5, .slot6, .slot7, .slot8{
-    background-color: darkgoldenrod;
+    background-color: rgb(255, 126, 121);
     display: inline-flex;
     width: 103px;
     height: 142px;
@@ -86,7 +96,7 @@ points = score
 }
 
 #slots{
-    background-color: darkgoldenrod;
+    background-color: rgb(255, 126, 121);
 }
 
 #break{
@@ -94,30 +104,38 @@ points = score
 }
 
 .footer{
-    background-color: deepskyblue;
-    height: 100px;
+    background-color: rgb(255, 126, 121);
+    height: 50px;
     display: flex;
-    padding: 10px;
+    padding: 2px;
 }
 
 .submit{
-    background-color: white;
-    height: 100px;
-    width: 250px;
-    margin-left: 100px;
+    background-color: rgb(115, 253, 255);
+    height: 50px;
+    width: 150px;
+    margin-left: 220px;
+    font-size: 20px;
 }
 
 .reset{
-    margin-left: 200px;
-    background-color: brown;
-    height: 100px;
-    width: 250px;
+    margin-left: 100px;
+    background-color: rgb(115, 252, 214);
+    height: 50px;
+    width: 150px;
+    color: black;
+    font-size: 20px;
 }
 
 .rules{
     height:100px;
-    background-color: orchid;
-    font-size: 20px;
+    background-color: rgb(255, 212, 121);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    color: black;
+    font-size: 1rem;
 
 }
 
@@ -130,54 +148,55 @@ points = score
 
 
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     @viewport {
       orientation: landscape;
     }
 
     .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
         display: inline-flex;
-        width: 60px;
-        height: 92px;
+        width: 67px;
+        height: 94px;
         margin-left: 10px;
         margin-top: 5px;
-        background-image: url("cardbackground.jpeg");
+        border-color: black;
+        border-width: 4px;
+        
         
     }
     .letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, 
     .sletter1, .sletter2, .sletter3,.sletter4, .sletter5,.sletter6, .sletter7, .sletter8 {
-    color: blueviolet;
+    color: black;
     font-size: 42px;
-    position: relative;
+    display: flex;
+    justify-content: center;
     bottom: -20px;
-    right: -3px;
+    right: -8px;
     }
     .point1, .point2, .point3, .point4, .point5, .point6, .point7, .point8,
-    .spoint1, .spoint2, .spoint3, .spoint4, .spoint5, .spoint6, .spoint7, .spoint8
-    {
-    color: green;
+    .spoint1, .spoint2, .spoint3, .spoint4, .spoint5, .spoint6, .spoint7, .spoint8{
+    color: black;
     font-size: 20px;
-    position: relative;
-    right: 35px;
+    display: flex;
+    right: 30px;
     }
     .header{
-        background-color: rgb(101, 101, 169);
+        background-color: rgb(255, 212, 121);
         color: black;
         height: 40px;
         font-size: 8px;
     }
     .draw-cards{
-        background-color: darkgoldenrod;
+        background-color: rgb(255, 126, 121);
         color: white;
         height: 120px;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;   
     }
     
     .slot1, .slot2, .slot3, .slot4, .slot5, .slot6, .slot7, .slot8{
-        background-color: darkgoldenrod;
+        background-color: rgb(255, 126, 121);
         display: inline-flex;
         width: 60px;
         height: 92px;
@@ -188,8 +207,9 @@ points = score
     }
     
     #slots{
-        background-color: darkgoldenrod;
+        background-color: rgb(255, 126, 121);
         height: 120px;
+        justify-content: center;
 
     }
     
@@ -198,33 +218,58 @@ points = score
     }
     
     .footer{
-        background-color: deepskyblue;
+        background-color: rgb(255, 126, 121);
         height: 50px;
         display: flex;
         padding: 2px;
     }
     
     .submit{
-        background-color: white;
+        background-color: rgb(115, 253, 255);
         height: 50px;
         width: 150px;
-        margin-left: 100px;
+        margin-left: 220px;
+        border-color: black;
+        border-width: 4px;
+        
     }
     
     .reset{
-        margin-left: 200px;
-        background-color: brown;
+        margin-left: 100px;
+        background-color: rgb(115, 252, 214);
         height: 50px;
         width: 150px;
+        color: black;
+        border-color: black;
+        border-width: 4px;
     }
     
     .rules{
         height:100px;
-        background-color: orchid;
+        background-color: rgb(255, 212, 121);
         font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding-top: 2px;
+        color: black;
+        font-size: 1rem;
     
     }
-    
 
   }
 
+  @media screen and (orientation: portrait) {
+    html {
+      /* Rotate the content container */
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      /* Set content width to viewport height */
+      width: 100vh;
+      /* Set content height to viewport width */
+      height: 100vw;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
