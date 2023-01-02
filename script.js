@@ -69,7 +69,7 @@ class PlayingCard{
 }
 
 
-const LET = {'A':1, 'B': 8, 'C':5, 'D': 3, 'E': 2, 'F':9,'G':6,'H':4,'&nbsp;I':2, 'J':9, 'K':9, 
+const LET = {'A':1, 'B': 8, 'C':5, 'D': 3, 'E': 2, 'F':9,'G':6,'H':4,'I':2, 'J':9, 'K':9, 
 'L':4, 'M':5,'N':4, 'O':1, 'P':6, 'Q': 9, 'R':3, 'S':2, 'T':2, 'U':2, 'V':8, 'W': 8, 'X':9, 'Y':9, 'Z':9
 }
 
@@ -237,7 +237,7 @@ document.addEventListener('keydown', function(event) {
             loop();
             break;  
         case 73:
-            value = '&nbsp;I';
+            value = 'I';
             loop();
             break;  
         case 74:
