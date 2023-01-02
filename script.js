@@ -95,7 +95,7 @@ function setup(){
 
     for(let i = 0; i < 8; i ++){
         if(i < deck.length){
-            document.getElementById('card' + (i+1)).style.backgroundImage="url('cardbackground.jpeg')";
+            document.getElementById('card' + (i+1)).style.backgroundColor="white";
             document.getElementById('card' + (i+1)).style.backgroundSize="100px";
             document.getElementById('card' + (i+1)).style.borderWidth="4px"
             document.getElementById('letter' + (i+ 1)).innerHTML=deck[i].letter;
