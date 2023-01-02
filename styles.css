@@ -18,6 +18,7 @@ points = score
     color: black;
     height: 40px;
     font-size: 25px;
+    padding-top: 5px;
 }
 .head2{
     background-color:rgb(255, 126, 121);
@@ -34,8 +35,20 @@ points = score
     
 }
 
+.score{
+    font-size: 15px;
+    padding-left: 100px;
+    
+}
+.notes{
+    display: none;
+}
+.highscore{
+    display: none;
+}
 .points{
-    margin-left: 100px;
+    margin-left: 300px;
+    font-size: 15px;
 }
 
 .highscore{
@@ -155,9 +168,9 @@ points = score
 
     .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
         display: inline-flex;
-        width: 67px;
+        width: 60px;
         height: 94px;
-        margin-left: 10px;
+        margin-left: 7px;
         margin-top: 5px;
         border-color: black;
         border-width: 4px;
@@ -171,14 +184,14 @@ points = score
     display: flex;
     justify-content: center;
     bottom: -20px;
-    right: -8px;
+    right: -3px;
     }
     .point1, .point2, .point3, .point4, .point5, .point6, .point7, .point8,
     .spoint1, .spoint2, .spoint3, .spoint4, .spoint5, .spoint6, .spoint7, .spoint8{
     color: black;
     font-size: 20px;
     display: flex;
-    right: 30px;
+    right: 24px;
     }
     .header{
         background-color: rgb(255, 212, 121);
@@ -199,8 +212,8 @@ points = score
         background-color: rgb(255, 126, 121);
         display: inline-flex;
         width: 60px;
-        height: 92px;
-        margin-left: 10px;
+        height: 94px;
+        margin-left: 7px;
         margin-top: 1px;
         border: none;
         
@@ -209,6 +222,7 @@ points = score
     #slots{
         background-color: rgb(255, 126, 121);
         height: 120px;
+        display:flex;
         justify-content: center;
 
     }
@@ -219,7 +233,7 @@ points = score
     
     .footer{
         background-color: rgb(255, 126, 121);
-        height: 50px;
+        height: 70px;
         display: flex;
         padding: 2px;
     }
@@ -228,9 +242,10 @@ points = score
         background-color: rgb(115, 253, 255);
         height: 50px;
         width: 150px;
-        margin-left: 220px;
+        margin-left: 120px;
         border-color: black;
         border-width: 4px;
+        
         
     }
     
