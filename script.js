@@ -35,6 +35,7 @@ function select(index){
     document.getElementById('slot' + (spelled.length + 1)).style.backgroundColor="white"
     document.getElementById('slot' + (spelled.length + 1)).style.borderWidth="4px"
     document.getElementById('slot' + (spelled.length + 1)).style.borderColor="black"
+    document.getElementById('slot' + (spelled.length + 1)).style.borderRadius="5px"
     document.getElementById('slot' + (spelled.length + 1)).style.borderStyle="solid"
     document.getElementById('sletter' + (spelled.length + 1)).innerHTML=deck[index-1].letter;
     document.getElementById('spoint' + (spelled.length + 1)).innerHTML=deck[index-1].point;
@@ -108,6 +109,21 @@ function setup(){
             document.getElementById('point' + (i+1)).innerHTML='';
         }   
     }
+    var highscore = localStorage.getItem("highscore");
+
+            if(highscore !== null){
+                if (totalScore > highscore) {
+                    localStorage.setItem("highscore", totalScore);      
+                }
+            }
+            else{
+                localStorage.setItem("highscore", totalScore);
+            }
+
+            
+            
+            
+            document.getElementById('highscore').innerHTML=('HIGH SCORE: ' + highscore);
 }
 
 function submit(){
@@ -162,8 +178,23 @@ function submit(){
 
             roundScore *= multiplier;
             totalScore += roundScore;
+
+            var highscore = localStorage.getItem("highscore");
+
+            if(highscore !== null){
+                if (totalScore > highscore) {
+                    localStorage.setItem("highscore", totalScore);      
+                }
+            }
+            else{
+                localStorage.setItem("highscore", totalScore);
+            }
+
+            
             
             document.getElementById('points').innerText=('SCORE: ' + totalScore);
+            document.getElementById('highscore').innerHTML=('HIGH SCORE: ' + highscore);
+
             
             spelled = [];
             indices = [];
@@ -192,6 +223,8 @@ function check(word){
         if(wordsAll.includes(word)){
             document.getElementById('header').style.backgroundColor='rgb(255, 212, 121)';
             spelling = 1;
+            document.getElementById('highscore').innerHTML=('HIGH SCORE: ' + highscore);
+
         }
         else{
             document.getElementById('header').style.backgroundColor='red';
@@ -331,18 +364,8 @@ function loop(){
     }
 }
 
-var highscore = localStorage.getItem("highscore");
 
-if(highscore !== null){
-    if (totalScore > highscore) {
-        localStorage.setItem("highscore", totalScore);      
-    }
-}
-else{
-    localStorage.setItem("highscore", totalScore);
-}
 
-document.getElementById('highscore').innerHTML=('HIGH SCORE: ' + highscore);
 
 function newgame(){
     location.reload()
