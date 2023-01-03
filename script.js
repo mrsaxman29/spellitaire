@@ -190,7 +190,7 @@ function check(word){
         
         wordsAll = data.split('\n');
         if(wordsAll.includes(word)){
-            //document.getElementById('header').style.backgroundColor='green';
+            document.getElementById('header').style.backgroundColor='rgb(255, 212, 121)';
             spelling = 1;
         }
         else{

@@ -17,7 +17,7 @@ points = score
 .header{
     background-color: rgb(255, 212, 121);
     color: black;
-    height: 40px;
+    height: 30px;
     font-size: 25px;
     padding-top: 5px;
 }
@@ -203,7 +203,7 @@ points = score
     .draw-cards{
         background-color: rgb(255, 126, 121);
         color: white;
-        height: 120px;
+        height: 110px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;   
@@ -222,7 +222,7 @@ points = score
     
     #slots{
         background-color: rgb(255, 126, 121);
-        height: 120px;
+        height: 110px;
         display:flex;
         justify-content: center;
 
