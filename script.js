@@ -124,6 +124,7 @@ function setup(){
             
             
             document.getElementById('highscore').innerHTML=('HIGH SCORE: ' + highscore);
+            document.getElementById('hs2').innerHTML=('HI SCORE: ' + highscore);
 }
 
 function submit(){

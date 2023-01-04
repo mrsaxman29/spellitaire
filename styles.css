@@ -284,7 +284,10 @@ points = score
   }
 
   @media screen and (orientation: portrait) {
+
+
     html {
+        margin: 0; height: 100%; overflow: hidden
       /* Rotate the content container */
       /* transform: rotate(-90deg);
       transform-origin: left top;
@@ -305,7 +308,7 @@ points = score
     #pause{
         display: block;
         height: 100vh;
-        font-size: 80PX;
+        font-size: 60PX;
         
         background-color: green;
         
