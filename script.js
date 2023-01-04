@@ -193,6 +193,8 @@ function submit(){
             
             
             document.getElementById('points').innerText=('SCORE: ' + totalScore);
+            document.getElementById('points2').innerText=('SCORE: ' + totalScore);
+            document.getElementById('hs2').innerHTML=('HI SCORE: ' + highscore);
             document.getElementById('highscore').innerHTML=('HIGH SCORE: ' + highscore);
 
             
