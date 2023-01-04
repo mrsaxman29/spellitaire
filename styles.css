@@ -281,7 +281,7 @@ points = score
 
 
     html {
-        margin: 0; height: 100%; overflow: hidden
+        margin: 0; height: 100%; overflow: hidden;
       /* Rotate the content container */
       transform: rotate(-90deg);
       transform-origin: left top;
