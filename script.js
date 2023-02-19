@@ -35,7 +35,7 @@ function select(index){
     document.getElementById('slot' + (spelled.length + 1)).style.backgroundColor="white"
     document.getElementById('slot' + (spelled.length + 1)).style.borderWidth="4px"
     document.getElementById('slot' + (spelled.length + 1)).style.borderColor="black"
-    document.getElementById('slot' + (spelled.length + 1)).style.borderRadius="5px"
+    document.getElementById('slot' + (spelled.length + 1)).style.borderRadius="15px"
     document.getElementById('slot' + (spelled.length + 1)).style.borderStyle="solid"
     document.getElementById('sletter' + (spelled.length + 1)).innerHTML=deck[index-1].letter;
     document.getElementById('spoint' + (spelled.length + 1)).innerHTML=deck[index-1].point;
@@ -80,8 +80,12 @@ var deck = []
 
 for (var key in LET){
     deck.push(new PlayingCard(key, LET[key],'f','b', 5));
-    if(key == 'A' || key == 'E' || key == 'I' || key =='O' || key =='U'){
+    if(key == 'A' || key == 'E' || key == 'I' || key =='O'){
         deck.push(new PlayingCard(key, LET[key],'f','b', 5));
+        deck.push(new PlayingCard(key, LET[key],'f','b', 5));
+        deck.push(new PlayingCard(key, LET[key],'f','b', 5));
+    }
+    else if(key =='U' || key == 'S' || key == 'T' || key == 'R'){
         deck.push(new PlayingCard(key, LET[key],'f','b', 5));
     }
 }
