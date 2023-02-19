@@ -293,6 +293,10 @@ points = score
     
     }
 
+    .newgame{
+        font-size: 18px;
+    }
+
   }
 
   @media screen and (orientation: portrait) {
